@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function twoSum(nums,t){
+    target=9;
+    a=[];
+    for(i=0;i<nums.length;i++){
+        for(j=i+1;j<nums.length;j++){
+            if(nums[i]+nums[j]==9){
+                a.push(nums[i])
+                a.push(nums[j])
+
+            }
+        }
+    }
+    return a
+}
+target=9;
+nums=[2,7,11,15];
+console.log(twoSum(nums,target))
+    </script>
+</body>
+</html>
