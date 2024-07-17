@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dupli</title>
+</head>
+<body>
+    <script>
+        function removeDuplicates(nums) {
+            x = 1
+   for(i=0;i<nums.length-1;i++){
+      if(nums[i] !==nums[i+1]){
+        nums[x]=nums[i+1]
+        x++
+      }
+   }  
+   return nums
+     
+        }
+        
+        console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
+    </script>
+</body>
+</html>
