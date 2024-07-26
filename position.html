@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+  <body>
+    <script>
+      function searchRange(nums, target) {
+        b = [];
+       
+          b.push(nums.indexOf(target));
+          b.push(nums.lastIndexOf(target));
+          return b;
+        
+      }
+      console.log(searchRange([5, 7, 7, 8, 8, 10], 1));
+    </script>
+  </body>
+</html>
