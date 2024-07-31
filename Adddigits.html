@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addDigits(num) {
+            if(num<10){
+                return num
+            }else{
+                a= String(num).split('')
+                b=a.map((val)=>Number(val))
+                x=b.reduce((b,c)=>b+c)
+               if(x<10){
+                return x
+               }else{
+                return addDigits(x)
+               }
+            
+            }
+            
+        }
+        console.log(addDigits(38));
+        
+    </script>
+</body>
+</html>
