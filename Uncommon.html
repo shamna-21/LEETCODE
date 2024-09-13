@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function name(a,b) {
+        var c= a.concat(' '+b).split(' ')
+        var d=c.filter((item)=>c.indexOf(item)===c.lastIndexOf(item))
+     return d
+        }
+        document.write(name('this is a apple','this is a sour'))
+    </script>
+</body>
+</html>
