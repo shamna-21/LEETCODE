@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var thirdMax = function(nums) {
+    let distinctNums = [...new Set(nums)];
+    distinctNums.sort((a, b) => b - a);
+    if (distinctNums.length < 3) {
+        return distinctNums[0];
+    }else {
+        return distinctNums[2];
+    }
+};
+
+console.log(thirdMax([1,2,3,2,5]))
+    </script>
+</body>
+</html>
