@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var minimumAbsDifference = function(arr) {
+arr.sort((a, b) => a - b);
+    min = arr[1] - arr[0];
+    narr = [];
+    narr.push([arr[0], arr[1]]);
+    
+    for (i = 2; i < arr.length; i++) {
+        if (min > arr[i]-arr[i-1]) {
+            min = arr[i]-arr[i-1];
+            narr.length = 0;
+            narr.push([arr[i-1], arr[i]]);
+        } else if (min == arr[i] - arr[i-1]) {
+            narr.push([arr[i-1], arr[i]]);
+        }
+    }
+    return narr;
+};
+
+
+console.log(minimumAbsDifference([4,2,1,3]))
+    </script>
+</body>
+</html>
