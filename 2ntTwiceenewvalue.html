@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var repeatedCharacter = function(s) {
+            let seen = new Set();
+            for (let char of s) {
+                if (seen.has(char)) {
+                    return char; 
+                }
+                seen.add(char);
+            }
+            return null;
+        };
+
+        // Example calls to the function
+        console.log(repeatedCharacter("abccbaacz")); // Output: "c"
+        console.log(repeatedCharacter("abcdd"));
+    </script>
+</body>
+</html>
