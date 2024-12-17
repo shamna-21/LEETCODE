@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce</title>
+</head>
+<body>
+    <script>
+        function fun(arr){
+var a=arr.reduce((pre,curr)=>{
+    if (curr in pre){
+            pre[curr]++
+        }else{
+            pre[curr]=1
+        }
+        return pre
+},{})
+return a
+}
+      
+console.log(fun(['mango','orange','mango','orange','pipe']))
+
+
+        //LARGEST OF NESTED ARRAY
+// var a=[[4,2,7,1],[20,70,40,90],[1,2,0]]
+// b=[];
+// for(i=0;i<a.length;i++){
+//     a[i]=a[i].sort((a,b)=>{
+//         return a-b;
+//     })
+//     b.push(a[i][a[i].length - 1]);
+// }
+
+// document.write(b)
+
+
+
+   // SALARYADD
+//    const user=[
+//     {id :1 , name:'shamna', sal :1200},
+//     { id :2 , name:'amna',sal :1800},
+//     { id :3 , name:'hamna',sal :1400}
+//    ]
+//    const char=user.map((x)=>x.sal)
+//    document.write(char+"<br>")
+   
+//    var fun=char.reduce((pre,curr)=>{
+//     return pre+curr
+//    },0)
+//    document.write(fun+"<br>")
+
+       // COUNT
+//       const fruit=['apple','banana','orange','apple','orange','banana','banana']
+//       const count=fruit.reduce((accumulator,fruits)=>{
+//         accumulator[fruits]=(accumulator[fruits]||0)+1;
+//         return accumulator;
+//       },{})
+// console.log(count)
+// let output = "";
+//         for (let fruits in count) {
+//             output += `Fruit: ${fruits}, Count: ${count[fruits]}<br>`;
+//         }
+        
+//         document.write(output);
+        
+
+       // SUM
+        // var arr=[1,2,3,4,5]
+        // var fun=arr.reduce((pre,curr)=>{
+        //     return Math.max(pre,curr)
+        // },1)
+        // document.write(fun)
+    </script>
+</body>
+</html>
